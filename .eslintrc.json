@@ -5,6 +5,10 @@
 		"jest": true
 	},
 	"extends": [
+		"react-app",
+		"react-app/jest",
+		"plugin:testing-library/react",
+		"plugin:jest-dom/recommended",
 		"eslint:recommended",
 		"plugin:import/recommended",
 		"plugin:import/typescript",
@@ -22,6 +26,8 @@
 	"plugins": [
 		"import",
 		"react",
+		"testing-library",
+		"jest-dom",
 		"react-hooks",
 		"@typescript-eslint",
 		"prettier"

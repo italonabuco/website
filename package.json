@@ -25,12 +25,6 @@
 		"lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
 		"format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
 	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",
@@ -50,9 +44,11 @@
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-import-resolver-typescript": "^3.5.5",
 		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-jest-dom": "^4.0.3",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-testing-library": "^5.11.0",
 		"prettier": "^2.8.8"
 	}
 }
