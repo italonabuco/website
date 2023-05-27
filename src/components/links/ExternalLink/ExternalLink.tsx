@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { CustomComponent } from '../../../types';
 
 type ExternalLinkType = {
 	href: string;
@@ -8,15 +9,19 @@ type ExternalLinkType = {
 	onClick?: () => void;
 };
 
-const ExternalLink: React.FC<ExternalLinkType> = ({
+const ExternalLink: CustomComponent<ExternalLinkType> = ({
 	href,
 	label,
 	onClick,
 	iconClass,
+	className,
 }) => {
 	return (
 		<a
-			className="flex bg-gray-800 hover:text-white hover:bg-gray-700 cursor-pointer transition rounded-md py-2 px-3 items-center"
+			className={clsx(
+				'flex bg-gray-800 hover:text-white hover:bg-gray-700 cursor-pointer transition rounded-md py-2 px-3 items-center',
+				className
+			)}
 			rel="noreferrer"
 			target="_blank"
 			href={href}
