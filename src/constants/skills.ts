@@ -13,6 +13,10 @@ export const languages = [
 		alt: 'SQL',
 		src: 'https://img.shields.io/badge/-SQL-000?&logo=MySQL&color=1f2937',
 	},
+	{
+		alt: 'GraphQL',
+		src: 'https://img.shields.io/badge/-GraphQL-000?&logo=GraphQL&color=1f2937',
+	},
 ];
 export const databases = [
 	{
@@ -29,6 +33,10 @@ export const databases = [
 	},
 ];
 export const technologies = [
+	{
+		alt: 'ApolloGraphQL',
+		src: 'https://img.shields.io/badge/-ApolloGraphQL-000?&logo=apollographql&color=1f2937',
+	},
 	{
 		alt: 'AWS',
 		src: 'https://img.shields.io/badge/-AWS-000?&logo=Amazon-AWS&color=1f2937',
